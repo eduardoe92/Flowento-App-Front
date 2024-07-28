@@ -15,14 +15,14 @@ const RegistrationForm = ({ onClose, eventId, onSuccessfulRegistration }) => {
     try {
       const response = await registerForEvent(obj.nombre, obj.email, eventId);
       if (response.status === "success") {
-        alert("Te registraste al evento con éxito");
-        onSuccessfulRegistration(); // Notificar a EventDetail que la inscripción fue exitosa
-      } else {
-        alert("Alguno de los datos es incorrecto");
+        // alert("Te registraste al evento con éxito");
+        onSuccessfulRegistration();
+      // } else {
+        // alert("Alguno de los datos es incorrecto");
       }
     } catch (error) {
-      alert("Ocurrió un error al inscribirse al evento");
-      console.error("Error al inscribirse al evento:", error); // Agrega un log del error para depuración
+      // alert("Ocurrió un error al inscribirse al evento");
+      console.error("Error al inscribirse al evento:", error);
     }
 
     onClose(); // Cierra el formulario independientemente del resultado

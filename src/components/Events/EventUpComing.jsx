@@ -66,7 +66,7 @@ const EventUpComing = () => {
       } catch (error) {
         const { response } = error;
         const { data } = response;
-        alert(data.payload);
+        // alert(data.payload);
       }
     };
     fetchEvents();

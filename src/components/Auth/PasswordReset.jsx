@@ -57,12 +57,12 @@ const PasswordReset = () => {
         }
       );
       if (response.data.status === "success") {
-        alert("Contraseña recuperada con éxito");
-      } else {
-        setError("Error al recuperar la contraseña.");
+        // alert("Contraseña recuperada con éxito");
+        // } else {
+        //   setError("Error al recuperar la contraseña.");
       }
     } catch (error) {
-      setError("Error en la solicitud.");
+      // setError("Error en la solicitud.");
     } finally {
       setLoading(false);
     }

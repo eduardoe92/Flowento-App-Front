@@ -35,11 +35,11 @@ export const Form = () => {
         console.log(data);
         console.log(data.status, data.payload);
 
-        if (data.status === "success") {
-          alert("Te registraste con exito");
-        } else {
-          alert("alguno de los datos es incorrecto");
-        }
+        // if (data.status === "success") {
+        //   alert("Te registraste con exito");
+        // } else {
+        //   alert("alguno de los datos es incorrecto");
+        // }
 
         setData(true);
       })
@@ -47,7 +47,7 @@ export const Form = () => {
         const { response } = error;
         const { data } = response;
 
-        alert(data.payload);
+        // alert(data.payload);
 
         setData(true);
       });

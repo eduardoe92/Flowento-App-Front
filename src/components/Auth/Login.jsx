@@ -27,13 +27,13 @@ function Login() {
     try {
       const response = await login(obj.email, obj.password);
       if (response.status === "success") {
-        alert("Te logueaste con éxito");
+        // alert("Te logueaste con éxito");
         navigate("/event-list");
-      } else {
-        alert("Alguno de los datos es incorrecto");
+      // } else {
+      //   alert("Alguno de los datos es incorrecto");
       }
     } catch (error) {
-      alert("Ocurrió un error al iniciar sesión");
+      // alert("Ocurrió un error al iniciar sesión");
     } finally {
       setLoading(false);
       setData(true);
